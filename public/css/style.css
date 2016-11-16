@@ -1,0 +1,37 @@
+/*CSS Reset*/
+/*html{color:#000;background:#FFF;overflow-y:scroll;}*/
+body{font-size:12px;font-family: "Microsoft YaHei",Arial,sans-serif;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+q:before,q:after{content:''}
+abbr,acronym{border:0;font-variant:normal}
+sup{vertical-align:text-top}
+sub{vertical-align:text-bottom}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;resize:none;}
+input,textarea,select{*font-size:100%}
+legend{color:#000}
+.hidden{display:none;}
+a{text-decoration: none;color:#2b6893;}
+/*清除浮动*/
+.clearfix{zoom:1;}.clearfix:after{content:'.';display:block;visibility:hidden;clear:both;height:0px;}
+/*浮动*/
+.fr{float:right;}
+.fl{float:left;}
+input{border: none;outline: none;}
+html{font-size: 20px;}
+body{background:#333;  }
+.login{ /*height: 100%; overflow: hidden;padding-top: 3.75rem;padding-bottom: 3.75rem;*/
+    width:90%; height:50%;margin:auto; position:absolute; top:0; left:0; bottom:0; right:0;
+}
+.login input, .login button,.login a {display: block;width: 85%; }
+.login h1{height:0.7rem; line-height: 0.7rem; color: white;font-size: 0.5rem; text-align: center;}
+.login input{height:0.6rem;margin:0.3rem auto;background:#333;border-bottom:1px solid #e1e1e1; font-size: 0.35rem; color: white }
+.sub-btn{height: 0.7rem;line-height: 0.7rem; background: #e1e1e1;border: none;font-size: 0.5rem; margin: 0.5rem auto; }
+.user_register{height: 0.5rem;line-height: 0.5rem;margin:0 auto;color:white;text-decoration:underline; font-size: 0.3rem;}
+
+

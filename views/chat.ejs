@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="telephone=no" name="format-detection">
+    <meta http-equiv="pragma" content="no-cache"/>
+    <title><%= title %></title>
+</head>
+<link rel='stylesheet' href='/css/chat.css'/>
+<script src="/socket.io/socket.io.js"></script>
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.js"></script>
+<body>
+<div class="chat_box">
+    <ul class="user_list">
+    </ul>
+    <div class="chat_viewport">
+        <h2>chat room</h2>
+        <div class="yt">
+            <ul class="chat_info">
+            </ul>
+            <form action="">
+                <input id="m" autocomplete="off"/>
+                <button>Send</button>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="/js/base.js"></script>
+<script>
+    var socket = io();
+    $('form').submit(function () {
+        socket.emit('chat message', $('#m').val());
+        $('#m').val('');
+        return false;
+    });
+    socket.on('chat message', function (msg) {
+        console.log(msg.users);
+        if (msg.type == 1) {
+            console.log(msg.users);
+            $('.user_list').empty();
+            for (var i = 0; i < msg.users.length; i++) {
+                $('.user_list').append($('<li>').text(msg.users[i]));
+            }
+        }
+        $('.chat_info').append($('<li>').text(msg.name + ':' + msg.msg));
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+html { font-size: 20px;}
+ul, h2, p,form,input {margin: 0;padding: 0;}
+input,button{outline: none;border: none;}
+em {font-style: normal;}
+li { list-style: none;padding: 0;margin: 0;}
+body {max-width: 750px; margin: 0 auto;  background: #e1e5f0; }
+
+.chat_box {
+    height: 13rem;
+    margin: 1rem auto;
+    background:#ffffff;
+}
+
+.user_list {
+    width: 20%;
+    height: 13rem;
+    float: left;
+    font-size: 0.2rem;
+    background: #333;
+}
+
+.user_list li {
+    height: 0.5rem;
+    line-height: 0.5rem;
+    text-align: center;
+    color: white;
+    border-bottom: 1px solid #000
+}
+
+.chat_viewport {
+    width: 80%;
+    height: 2rem;
+    float: left;
+}
+
+.chat_viewport h2 {
+    font-size: 0.3rem;
+    text-align: center;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    border-bottom: 1px solid silver;
+}
+
+.chat_info li {
+    height: 0.6rem;
+    margin-bottom: 0.1rem;
+}
+
+.chat_info p {
+    height: 0.3rem;
+    font-size: 0.2rem;
+    line-height: 0.3rem;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+}
+
+.right {
+    text-align: right;
+}
+.yt{ width:100%; height:13rem;position: relative; }
+
+form {
+    /*  background: cornsilk;*/
+    position: absolute;
+    left: 0;
+    bottom: 0.52rem;
+    width: 100%;
+}
+
+
+form input {
+
+    width: 88%;
+    height: 1rem;
+    font-size: 0.3rem;
+    /* margin-right: .5%;*/
+    border: 1px solid silver;
+    float: left;;
+}
+
+form button {
+    display: inline-block;;
+    width: 11.6%;
+    text-align: center;
+    height: 1.07rem;
+    background: rgb(130, 224, 255);
+    float:left;
+}
+
+.chat_info li{height:0.3rem;font-size:0.2rem;line-height: 0.3rem; margin-left: 0.2rem; margin-right: 0.2rem;}
+
+.chat_info li:nth-child(odd) {
+    background: #eee;
+}
+
+#nickname {
+    width: 60%;
+    height: 50px;
+    position: fixed;
+    left: 0;
+    bottom: 50px;
+}
+
+#name {
+    width: 40%;
+    float: left;
+    border: 1px solid #000000;
+}
+
+#btn {
+    width: 20%;
+    float: left;
+    text-align: center;
+    background: cornflowerblue
+}
+

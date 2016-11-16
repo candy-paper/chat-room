@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="telephone=no" name="format-detection">
+    <meta http-equiv="pragma" content="no-cache"/>
+    <title>注册</title>
+    <link rel='stylesheet' href='/css/register.css' />
+    <script src="http://cdn.bootcss.com/zepto/1.0rc1/zepto.min.js"></script>
+</head>
+<body>
+<div class="register">
+    <h1 class="title">新用户注册</h1>
+    <form method="post" action="/register/do" > <!-- action="/register/do"-->
+        <input type="text" name="name" placeholder="用户名"/>
+        <input type="email" name="email" placeholder="邮箱"/>
+        <input type="password" name="password" placeholder="密码"/>
+        <input type="password" name="respassword" placeholder="确认密码"/>
+        <input type="submit" value="注册"/>
+    </form>
+</div>
+<script src="/js/base.js"></script>
+</body>
+</html>
